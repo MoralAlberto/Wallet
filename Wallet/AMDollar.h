@@ -1,17 +1,17 @@
 //
-//  AMEuro.h
+//  AMDollar.h
 //  Wallet
 //
-//  Created by Moral on 15/1/15.
+//  Created by Moral on 17/1/15.
 //  Copyright (c) 2015 Moral. All rights reserved.
 //
 
 @import Foundation;
 #import "AMMoney.h"
 
-@interface AMEuro : AMMoney
+@interface AMDollar : AMMoney
 
 - (instancetype)initWithAmount:(NSInteger)amount;
-- (AMEuro *)times:(NSInteger)multiplier;
+- (AMDollar *)times:(NSInteger)multiplier;
 
 @end

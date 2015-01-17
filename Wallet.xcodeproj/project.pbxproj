@@ -15,6 +15,11 @@
 		3939DC941A684EE400D3FB9C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3939DC921A684EE400D3FB9C /* LaunchScreen.xib */; };
 		3939DCAB1A684FCA00D3FB9C /* AMEuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3939DCAA1A684FCA00D3FB9C /* AMEuroTests.m */; };
 		3939DCAF1A68518A00D3FB9C /* AMEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 3939DCAE1A68518A00D3FB9C /* AMEuro.m */; };
+		394914501A6A7C5F00290324 /* AMDollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3949144F1A6A7C5F00290324 /* AMDollarTest.m */; };
+		394914561A6A7DE300290324 /* AMDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 394914551A6A7DE300290324 /* AMDollar.m */; };
+		394914571A6A7DE300290324 /* AMDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 394914551A6A7DE300290324 /* AMDollar.m */; };
+		3949145E1A6A845200290324 /* AMMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 3949145D1A6A845200290324 /* AMMoney.m */; };
+		3949145F1A6A845200290324 /* AMMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 3949145D1A6A845200290324 /* AMMoney.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,11 @@
 		3939DCAA1A684FCA00D3FB9C /* AMEuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMEuroTests.m; sourceTree = "<group>"; };
 		3939DCAD1A68518A00D3FB9C /* AMEuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMEuro.h; sourceTree = "<group>"; };
 		3939DCAE1A68518A00D3FB9C /* AMEuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMEuro.m; sourceTree = "<group>"; };
+		3949144F1A6A7C5F00290324 /* AMDollarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDollarTest.m; sourceTree = "<group>"; };
+		394914541A6A7DE300290324 /* AMDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDollar.h; sourceTree = "<group>"; };
+		394914551A6A7DE300290324 /* AMDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDollar.m; sourceTree = "<group>"; };
+		3949145C1A6A845200290324 /* AMMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMoney.h; sourceTree = "<group>"; };
+		3949145D1A6A845200290324 /* AMMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMoney.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				3939DCAA1A684FCA00D3FB9C /* AMEuroTests.m */,
+				3949144F1A6A7C5F00290324 /* AMDollarTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -136,6 +147,10 @@
 			children = (
 				3939DCAD1A68518A00D3FB9C /* AMEuro.h */,
 				3939DCAE1A68518A00D3FB9C /* AMEuro.m */,
+				394914541A6A7DE300290324 /* AMDollar.h */,
+				394914551A6A7DE300290324 /* AMDollar.m */,
+				3949145C1A6A845200290324 /* AMMoney.h */,
+				3949145D1A6A845200290324 /* AMMoney.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -243,7 +258,9 @@
 			files = (
 				3939DCAF1A68518A00D3FB9C /* AMEuro.m in Sources */,
 				3939DC8C1A684EE400D3FB9C /* AMViewController.m in Sources */,
+				394914561A6A7DE300290324 /* AMDollar.m in Sources */,
 				3939DC891A684EE400D3FB9C /* AMAppDelegate.m in Sources */,
+				3949145E1A6A845200290324 /* AMMoney.m in Sources */,
 				3939DC861A684EE400D3FB9C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394914571A6A7DE300290324 /* AMDollar.m in Sources */,
 				3939DCAB1A684FCA00D3FB9C /* AMEuroTests.m in Sources */,
+				3949145F1A6A845200290324 /* AMMoney.m in Sources */,
+				394914501A6A7C5F00290324 /* AMDollarTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +455,7 @@
 				3939DCA51A684EE400D3FB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3939DCA61A684EE400D3FB9C /* Build configuration list for PBXNativeTarget "WalletTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +464,7 @@
 				3939DCA81A684EE400D3FB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

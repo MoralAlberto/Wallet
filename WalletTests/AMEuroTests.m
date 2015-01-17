@@ -17,11 +17,13 @@
 
 //  Crear Test de multiplicación
 - (void)testMultiplication {
-    
     AMEuro *euro = [[AMEuro alloc] initWithAmount:5];
+    AMEuro *ten = [[AMEuro alloc] initWithAmount:10];
     AMEuro *total = [euro times:2];
-    XCTAssertEqual(total.amount, 10, @"5*2 should be 10");
 
+    //  Sabemos con toda seguridad que si ocultamos amount, la app sigue funcionando
+    //  No ha roto nada
+    XCTAssertEqualObjects(total, ten, @"€5 * 2 shoud be €10");
 }
 
 - (void)testEquality {
