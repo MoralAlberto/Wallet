@@ -1,5 +1,5 @@
 //
-//  AMDollar.h
+//  AMMoney-Private.h
 //  Wallet
 //
 //  Created by Moral on 17/1/15.
@@ -9,6 +9,8 @@
 @import Foundation;
 #import "AMMoney.h"
 
-@interface AMDollar : AMMoney
+@interface AMMoney ()
+
+@property (strong, nonatomic) NSNumber *amount;
 
 @end

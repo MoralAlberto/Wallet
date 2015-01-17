@@ -11,7 +11,4 @@
 
 @interface AMEuro : AMMoney
 
-- (instancetype)initWithAmount:(NSInteger)amount;
-- (AMEuro *)times:(NSInteger)multiplier;
-
 @end

@@ -1,5 +1,5 @@
 //
-//  AMDollar.h
+//  NSObject+GNUStepAddons.h
 //  Wallet
 //
 //  Created by Moral on 17/1/15.
@@ -7,8 +7,9 @@
 //
 
 @import Foundation;
-#import "AMMoney.h"
 
-@interface AMDollar : AMMoney
+@interface NSObject (GNUStepAddons)
+
+- (id) subclassResponsability:(SEL)aSel;
 
 @end

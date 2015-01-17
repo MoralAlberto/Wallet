@@ -7,27 +7,57 @@
 //
 
 #import "AMMoney.h"
-
-@interface AMMoney ()
-
-@property (nonatomic) NSInteger *amount;
-
-@end
+#import "NSObject+GNUStepAddons.h"
+#import "AMMoney-Private.h"
+#import "AMEuro.h"
+#import "AMDollar.h"
 
 @implementation AMMoney
 
-- (id)initWithAmount:(NSInteger)amount {
++ (id)euroWithAmount:(NSInteger)amount {
+    return [[AMMoney alloc] initWithAmount:amount currency:@"EUR"];
+}
+
++ (id)dollarWithAmount:(NSInteger)amount {
+    return [[AMMoney alloc] initWithAmount:amount currency:@"USD"];
+}
+
+- (id)initWithAmount:(NSInteger)amount currency:(NSString *)currency {
 
     if (self = [super init]) {
-        _amount = _amount;
+        _amount = @(amount);
+        _currency = currency;
     }
     return self;
 }
 
-- (AMMoney *)times:(NSInteger)multiplies {
+- (id)times:(NSInteger)multiplier {
     //  No se debería llamar sino que se debería usar el de la subclase
     //  Jamás se debería llamar este método
-    return self;
+    //  _cmd es un parámetro oculto que recive cada mensaje, que identifica ese método
+    //return [self subclassResponsability:_cmd];
+    AMMoney *newMoney = [[AMMoney alloc] initWithAmount:[self.amount integerValue] * multiplier currency:self.currency];
+    return newMoney;
+    
+}
+
+#pragma mark - Overwritten
+- (NSString *) description {
+    return [NSString stringWithFormat:@"<%@ %ld>",
+            [self class], (long) [self amount]];
+}
+
+#pragma mark - Overwritten
+
+- (BOOL)isEqual:(id)object {
+    //  Cual es el código que pase este test? comparar la cantidad.
+    return [self amount] == [object amount];
+}
+
+//  El método hash nos dice si dos objetos son iguales, NSObject lo que hace es devolver
+//  la dirección de memoria para saber si dos objetos son el mismo.
+- (NSUInteger)hash {
+    return (NSUInteger) self.amount;
 }
 
 @end

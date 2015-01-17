@@ -20,6 +20,9 @@
 		394914571A6A7DE300290324 /* AMDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 394914551A6A7DE300290324 /* AMDollar.m */; };
 		3949145E1A6A845200290324 /* AMMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 3949145D1A6A845200290324 /* AMMoney.m */; };
 		3949145F1A6A845200290324 /* AMMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 3949145D1A6A845200290324 /* AMMoney.m */; };
+		394914631A6A8ADE00290324 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 394914621A6A8ADE00290324 /* NSObject+GNUStepAddons.m */; };
+		394914641A6A8ADE00290324 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 394914621A6A8ADE00290324 /* NSObject+GNUStepAddons.m */; };
+		394914661A6AA61D00290324 /* AMMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 394914651A6AA61D00290324 /* AMMoneyTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		394914551A6A7DE300290324 /* AMDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDollar.m; sourceTree = "<group>"; };
 		3949145C1A6A845200290324 /* AMMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMoney.h; sourceTree = "<group>"; };
 		3949145D1A6A845200290324 /* AMMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMoney.m; sourceTree = "<group>"; };
+		394914611A6A8ADE00290324 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
+		394914621A6A8ADE00290324 /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
+		394914651A6AA61D00290324 /* AMMoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMoneyTest.m; sourceTree = "<group>"; };
+		3949146A1A6AB48000290324 /* AMMoney-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMMoney-Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +101,7 @@
 		3939DC821A684EE400D3FB9C /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				394914601A6A8A9E00290324 /* Categories */,
 				3939DCAC1A68517000D3FB9C /* Models */,
 				3939DC871A684EE400D3FB9C /* AMAppDelegate.h */,
 				3939DC881A684EE400D3FB9C /* AMAppDelegate.m */,
@@ -138,6 +146,7 @@
 			children = (
 				3939DCAA1A684FCA00D3FB9C /* AMEuroTests.m */,
 				3949144F1A6A7C5F00290324 /* AMDollarTest.m */,
+				394914651A6AA61D00290324 /* AMMoneyTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -151,8 +160,18 @@
 				394914551A6A7DE300290324 /* AMDollar.m */,
 				3949145C1A6A845200290324 /* AMMoney.h */,
 				3949145D1A6A845200290324 /* AMMoney.m */,
+				3949146A1A6AB48000290324 /* AMMoney-Private.h */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		394914601A6A8A9E00290324 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				394914611A6A8ADE00290324 /* NSObject+GNUStepAddons.h */,
+				394914621A6A8ADE00290324 /* NSObject+GNUStepAddons.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +277,7 @@
 			files = (
 				3939DCAF1A68518A00D3FB9C /* AMEuro.m in Sources */,
 				3939DC8C1A684EE400D3FB9C /* AMViewController.m in Sources */,
+				394914631A6A8ADE00290324 /* NSObject+GNUStepAddons.m in Sources */,
 				394914561A6A7DE300290324 /* AMDollar.m in Sources */,
 				3939DC891A684EE400D3FB9C /* AMAppDelegate.m in Sources */,
 				3949145E1A6A845200290324 /* AMMoney.m in Sources */,
@@ -270,8 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				394914571A6A7DE300290324 /* AMDollar.m in Sources */,
+				394914641A6A8ADE00290324 /* NSObject+GNUStepAddons.m in Sources */,
 				3939DCAB1A684FCA00D3FB9C /* AMEuroTests.m in Sources */,
 				3949145F1A6A845200290324 /* AMMoney.m in Sources */,
+				394914661A6AA61D00290324 /* AMMoneyTest.m in Sources */,
 				394914501A6A7C5F00290324 /* AMDollarTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
