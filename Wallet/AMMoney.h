@@ -10,11 +10,12 @@
 
 @interface AMMoney : NSObject
 
+@property (strong, nonatomic) NSNumber *amount;
 @property (readonly, nonatomic) NSString *currency;
 
 + (id)euroWithAmount:(NSInteger)amount;
 + (id)dollarWithAmount:(NSInteger)amount;
 - (id)initWithAmount:(NSInteger)amount currency:(NSString *)currency;
 - (id)times:(NSInteger)multiplies;
-
+- (AMMoney *)plus:(AMMoney *)other;
 @end

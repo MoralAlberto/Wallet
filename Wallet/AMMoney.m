@@ -8,9 +8,7 @@
 
 #import "AMMoney.h"
 #import "NSObject+GNUStepAddons.h"
-#import "AMMoney-Private.h"
-#import "AMEuro.h"
-#import "AMDollar.h"
+
 
 @implementation AMMoney
 
@@ -38,7 +36,13 @@
     //return [self subclassResponsability:_cmd];
     AMMoney *newMoney = [[AMMoney alloc] initWithAmount:[self.amount integerValue] * multiplier currency:self.currency];
     return newMoney;
-    
+}
+
+- (AMMoney *)plus:(AMMoney *)other {
+    NSInteger totalAmount = [self.amount integerValue] + [other.amount integerValue];
+    AMMoney *total = [[AMMoney alloc] initWithAmount:totalAmount currency:self.currency];
+    return total;
+
 }
 
 #pragma mark - Overwritten
@@ -51,7 +55,11 @@
 
 - (BOOL)isEqual:(id)object {
     //  Cual es el código que pase este test? comparar la cantidad.
-    return [self amount] == [object amount];
+    if ([self.currency isEqual:[object currency]]) {
+        return [self amount] == [object amount];
+    } else {
+        return NO;
+    }
 }
 
 //  El método hash nos dice si dos objetos son iguales, NSObject lo que hace es devolver
