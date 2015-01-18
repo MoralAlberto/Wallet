@@ -92,5 +92,20 @@
     XCTAssertEqualObjects([[AMMoney dollarWithAmount:5] plus:[AMMoney dollarWithAmount:5]], [AMMoney dollarWithAmount:10], @"$5 + $5 = 10");
 }
 
+- (void)testThatHashIsAmount {
+
+    AMMoney *one = [AMMoney dollarWithAmount:1];
+    XCTAssertEqual([one hash], 1, @"The hash must be the same as the amount");
+}
+
+- (void)testDescription {
+
+    AMMoney *one = [AMMoney dollarWithAmount:1];
+    NSString *desc = @"<AMMoney :$1>";
+    
+    XCTAssertEqualObjects(desc, [one description], @"Description must macth template");
+
+}
+
 
 @end
