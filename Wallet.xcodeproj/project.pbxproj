@@ -18,6 +18,9 @@
 		394914631A6A8ADE00290324 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 394914621A6A8ADE00290324 /* NSObject+GNUStepAddons.m */; };
 		394914641A6A8ADE00290324 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 394914621A6A8ADE00290324 /* NSObject+GNUStepAddons.m */; };
 		394914661A6AA61D00290324 /* AMMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 394914651A6AA61D00290324 /* AMMoneyTest.m */; };
+		39E4B89A1A6C099D004A8116 /* AMBrokerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E4B8991A6C099D004A8116 /* AMBrokerTest.m */; };
+		39E4B89D1A6C0A9E004A8116 /* AMBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E4B89C1A6C0A9E004A8116 /* AMBroker.m */; };
+		39E4B89E1A6C0AAA004A8116 /* AMBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E4B89C1A6C0A9E004A8116 /* AMBroker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		394914611A6A8ADE00290324 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
 		394914621A6A8ADE00290324 /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
 		394914651A6AA61D00290324 /* AMMoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMoneyTest.m; sourceTree = "<group>"; };
+		39E4B8991A6C099D004A8116 /* AMBrokerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBrokerTest.m; sourceTree = "<group>"; };
+		39E4B89B1A6C0A9E004A8116 /* AMBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBroker.h; sourceTree = "<group>"; };
+		39E4B89C1A6C0A9E004A8116 /* AMBroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBroker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				394914651A6AA61D00290324 /* AMMoneyTest.m */,
+				39E4B8991A6C099D004A8116 /* AMBrokerTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -142,6 +149,8 @@
 			children = (
 				3949145C1A6A845200290324 /* AMMoney.h */,
 				3949145D1A6A845200290324 /* AMMoney.m */,
+				39E4B89B1A6C0A9E004A8116 /* AMBroker.h */,
+				39E4B89C1A6C0A9E004A8116 /* AMBroker.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -256,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E4B89D1A6C0A9E004A8116 /* AMBroker.m in Sources */,
 				3939DC8C1A684EE400D3FB9C /* AMViewController.m in Sources */,
 				394914631A6A8ADE00290324 /* NSObject+GNUStepAddons.m in Sources */,
 				3939DC891A684EE400D3FB9C /* AMAppDelegate.m in Sources */,
@@ -268,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E4B89A1A6C099D004A8116 /* AMBrokerTest.m in Sources */,
 				394914641A6A8ADE00290324 /* NSObject+GNUStepAddons.m in Sources */,
 				3949145F1A6A845200290324 /* AMMoney.m in Sources */,
+				39E4B89E1A6C0AAA004A8116 /* AMBroker.m in Sources */,
 				394914661A6AA61D00290324 /* AMMoneyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
