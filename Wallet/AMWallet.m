@@ -9,11 +9,15 @@
 #import "AMWallet.h"
 #import "AMMoney.h"
 
-@interface AMWallet() <AMMoney>
+@interface AMWallet() 
 @property (nonatomic, strong) NSMutableArray *moneys;
 @end
 
 @implementation AMWallet
+
+- (NSUInteger)count {
+    return self.moneys.count + 1;
+}
 
 -(id)initWithAmount:(NSInteger)amount currency:(NSString *)currency {
 

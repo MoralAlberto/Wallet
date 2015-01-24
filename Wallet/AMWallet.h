@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "AMMoney.h"
 
-@interface AMWallet : NSObject
+@interface AMWallet : NSObject <AMMoney>
 
+@property (nonatomic, readonly) NSUInteger count;
 -(id)initWithAmount:(NSInteger)amount currency:(NSString *)currency;
 -(id<AMMoney>)plus:(AMMoney *)other;
 
