@@ -7,15 +7,25 @@
 //
 
 @import Foundation;
+@class AMMoney;
+@class AMBroker;
 
-@interface AMMoney : NSObject
+@protocol AMMoney <NSObject>
 
-@property (strong, nonatomic) NSNumber *amount;
+- (id)initWithAmount:(NSInteger)amount currency:(NSString *)currency;
+//  times devuelve un objeto que implementa el protocolo AMMoney
+- (id<AMMoney>)times:(NSInteger)multiplies;
+- (id<AMMoney>)plus:(AMMoney *)other;
+
+- (id<AMMoney>)reduceToCurrency:(NSString *)currency withBroker:(AMBroker *)broker;
+@end
+
+@interface AMMoney : NSObject <AMMoney>
+
+@property (strong, nonatomic, readonly) NSNumber *amount;
 @property (readonly, nonatomic) NSString *currency;
 
 + (id)euroWithAmount:(NSInteger)amount;
 + (id)dollarWithAmount:(NSInteger)amount;
-- (id)initWithAmount:(NSInteger)amount currency:(NSString *)currency;
-- (id)times:(NSInteger)multiplies;
-- (AMMoney *)plus:(AMMoney *)other;
+
 @end

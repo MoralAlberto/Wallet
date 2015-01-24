@@ -101,10 +101,9 @@
 - (void)testDescription {
 
     AMMoney *one = [AMMoney dollarWithAmount:1];
-    NSString *desc = @"<AMMoney :$1>";
+    NSString *desc = @"<AMMoney: USD 1>";
     
     XCTAssertEqualObjects(desc, [one description], @"Description must macth template");
-
 }
 
 

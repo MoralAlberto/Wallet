@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3922077B1A73B5A60082C009 /* AMWalletTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922077A1A73B5A60082C009 /* AMWalletTest.m */; };
+		3922077E1A73B7BC0082C009 /* AMWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922077D1A73B7BC0082C009 /* AMWallet.m */; };
 		3939DC861A684EE400D3FB9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3939DC851A684EE400D3FB9C /* main.m */; };
 		3939DC891A684EE400D3FB9C /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3939DC881A684EE400D3FB9C /* AMAppDelegate.m */; };
 		3939DC8C1A684EE400D3FB9C /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3939DC8B1A684EE400D3FB9C /* AMViewController.m */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3922077A1A73B5A60082C009 /* AMWalletTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMWalletTest.m; sourceTree = "<group>"; };
+		3922077C1A73B7BC0082C009 /* AMWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMWallet.h; sourceTree = "<group>"; };
+		3922077D1A73B7BC0082C009 /* AMWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMWallet.m; sourceTree = "<group>"; };
 		3939DC801A684EE400D3FB9C /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3939DC841A684EE400D3FB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3939DC851A684EE400D3FB9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,6 +145,7 @@
 			children = (
 				394914651A6AA61D00290324 /* AMMoneyTest.m */,
 				39E4B8991A6C099D004A8116 /* AMBrokerTest.m */,
+				3922077A1A73B5A60082C009 /* AMWalletTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -151,6 +157,8 @@
 				3949145D1A6A845200290324 /* AMMoney.m */,
 				39E4B89B1A6C0A9E004A8116 /* AMBroker.h */,
 				39E4B89C1A6C0A9E004A8116 /* AMBroker.m */,
+				3922077C1A73B7BC0082C009 /* AMWallet.h */,
+				3922077D1A73B7BC0082C009 /* AMWallet.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -265,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3922077E1A73B7BC0082C009 /* AMWallet.m in Sources */,
 				39E4B89D1A6C0A9E004A8116 /* AMBroker.m in Sources */,
 				3939DC8C1A684EE400D3FB9C /* AMViewController.m in Sources */,
 				394914631A6A8ADE00290324 /* NSObject+GNUStepAddons.m in Sources */,
@@ -278,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3922077B1A73B5A60082C009 /* AMWalletTest.m in Sources */,
 				39E4B89A1A6C099D004A8116 /* AMBrokerTest.m in Sources */,
 				394914641A6A8ADE00290324 /* NSObject+GNUStepAddons.m in Sources */,
 				3949145F1A6A845200290324 /* AMMoney.m in Sources */,

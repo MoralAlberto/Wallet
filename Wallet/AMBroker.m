@@ -11,8 +11,6 @@
 
 @interface AMBroker ()
 
-@property (strong, nonatomic) NSMutableDictionary *rates;
-
 @end
 
 @implementation AMBroker
@@ -25,16 +23,21 @@
     return self;
 }
 
-- (AMMoney *)reduce:(AMMoney *)money
+- (AMMoney *)reduce:(id<AMMoney>)money
          toCurrency:(NSString *)currency {
-    return money;
+    
+//  Double dispatch
+    return [money reduceToCurrency:currency withBroker:self];
 }
+
 
 - (void)addRate:(NSInteger)rate
    fromCurrency:(NSString *)fromCurrency
      toCurrency:(NSString *)toCurrency{
 
     [self.rates setObject:@(rate) forKey:[self keyFromCurrency:fromCurrency toCurrency:toCurrency]];
+    
+    [self.rates setObject:@(1.0/rate) forKey:[self keyFromCurrency:toCurrency toCurrency:fromCurrency]];
 }
 
 #pragma mark - Utils
