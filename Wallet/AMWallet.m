@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Moral. All rights reserved.
 //
 
+@import UIKit;
 #import "AMWallet.h"
 #import "AMMoney.h"
 
@@ -56,6 +57,17 @@
     }
 
     return result;
+}
+
+#pragma mark - Notifications
+- (void)subscribeToMemoryWarning:(NSNotificationCenter *)nc {
+
+    [nc addObserver:self selector:@selector(dumpToDisk:) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
+
+}
+     
+- (void)dumpToDisk:(NSNotificationCenter *)nc {
+
 }
 
 @end

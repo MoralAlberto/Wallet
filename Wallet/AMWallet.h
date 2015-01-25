@@ -15,4 +15,6 @@
 -(id)initWithAmount:(NSInteger)amount currency:(NSString *)currency;
 -(id<AMMoney>)plus:(AMMoney *)other;
 
+- (void)subscribeToMemoryWarning:(NSNotificationCenter *)nc;
+
 @end

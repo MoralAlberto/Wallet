@@ -46,4 +46,19 @@
     return [NSString stringWithFormat:@"%@-%@", fromCurrency, toCurrency];
 }
 
+#pragma mark - Network Test
+//  Después de la conexión a la red
+-(void)parseJSONRates:(NSData *)data {
+
+    NSError *err = nil;
+    id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&err];
+    
+    if (obj != nil) {
+        //  Pillamos los rates y los vamos añadiendo al broker
+    } else {
+        //  No hemos recibido nada
+        [NSException raise:@"NoRatesInJSONException" format:@"JSON must carry some data!"];
+    }
+}
+
 @end
